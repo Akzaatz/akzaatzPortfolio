@@ -1,0 +1,32 @@
+.header {
+    background: $second;
+    padding-top: 50px;
+    min-height: 450px;
+
+    h1 {
+        margin: 30px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+
+
+    svg:not(:root).svg-inline--fa {
+        overflow: visible;
+    }
+
+    .svg-inline--fa.fa-w-18 {
+        width: 1.125em;
+    }
+
+    .svg-inline--fa {
+        display: inline-block;
+        font-size: inherit;
+        height: 1em;
+        overflow: visible;
+        vertical-align: -.125em;
+    }
+}

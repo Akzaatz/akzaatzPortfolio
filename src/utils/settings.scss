@@ -1,0 +1,103 @@
+// imports fonts
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../public/font/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'F25_Bank_Printer';
+    src: url('../../public/font/f25_bank_printer/F25_Bank_Printer.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'F25_Bank_Printer_Bold';
+    src: url('../../public/font/f25_bank_printer/F25_Bank_Printer_Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Fabada-regular';
+    src: url('../../public/font/fabada/Fabada-regular.ttf') format('truetype');
+}
+
+// Variables :
+
+// ========FONTS==========
+$font1: 'Roboto', sans-serif;
+$font2: 'F25_Bank_Printer', sans-serif;
+$font3: 'F25_Bank_Printer_Bold', sans-serif;
+$font4: 'Fabada-regular', sans-serif;
+
+
+
+//  ========COULEURS==========
+$black: #101010;
+$white: #f1f1f1;
+$prim: #002E3C;
+$second: #005066;
+$third: #007594;
+$fourth: #009cc4;
+$fifth: #00C5f6;
+$six: #B2E5FF;
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: $white;
+
+    // *::selection {
+    //     background: $third;
+
+    // }
+
+}
+
+a {
+    color: $black;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    font-family: $font1;
+    font-size: 1rem;
+    background: $third;
+    // box-shadow: 0px 2px 10px rgba(59, 59, 59, 0.25);
+
+    img {
+        object-fit: cover;
+    }
+
+    .divider-custom {
+        margin: 1.25rem 0 1.5rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .divider-custom .divider-custom-line {
+        width: 100%;
+        max-width: 7rem;
+        height: 0.25rem;
+        background-color: #fff;
+        border-radius: 1rem;
+        border-color: #fff !important;
+    }
+
+}

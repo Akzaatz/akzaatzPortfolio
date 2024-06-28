@@ -1,0 +1,65 @@
+.main {
+    padding: 20px;
+    text-align: center;
+}
+
+.skills {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.layout {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+
+
+.bottone1 {
+    margin-top: 20px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    border-radius: 9px;
+    background: #007594;
+    border: none;
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+
+
+    &:hover {
+        box-shadow: 12px 12px 95px -6px indigo;
+    }
+
+}
+
+button-competences {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-item {
+    margin-left: auto !important;
+}
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        flex: 0 0 33.3333333333%;
+        max-width: 33.3333333333%;
+    }
+}

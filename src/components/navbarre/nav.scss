@@ -1,0 +1,102 @@
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: -1px;
+    min-height: 55px;
+    background: $prim;
+    color: $white;
+    padding: 1rem;
+    z-index: 5;
+
+    .navbar_links {
+        display: flex;
+    }
+
+    .navbar_link {
+        padding: 0 0.3rem;
+        color: inherit;
+    }
+
+    .navbar_burger {
+        width: 40px;
+        height: 40px;
+        border: none;
+        background: transparent;
+        display: none;
+    }
+
+    @media screen and (max-width: 768px) {
+        .navbar_links {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            right: -100vw;
+            bottom: 0;
+            height: 100vh;
+            padding: 2rem;
+            visibility: hidden;
+            background: rgb(255, 0, 0);
+            transition: right 0.3s ease;
+            /* Ajout de la transition */
+        }
+
+        .show-nav .navbar_links {
+            width: 100vw;
+            right: 0;
+            visibility: visible;
+        }
+
+        .hide-nav .navbar_links {
+            right: -100vw;
+            visibility: hidden;
+        }
+
+        .navbar_link {
+            display: block;
+            padding: 1.5rem;
+            font-size: 5vw;
+        }
+
+        .navbar_burger {
+            display: block;
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+        }
+
+        .navbar_burger:hover {
+            cursor: pointer;
+        }
+
+        .burger-bar,
+        .burger-bar::before,
+        .burger-bar::after {
+            display: block;
+            width: 40px;
+            height: 2px;
+            position: relative;
+            border-radius: 3px;
+            background: $white;
+        }
+
+        .burger-bar::before,
+        .burger-bar::after {
+            content: "";
+            position: absolute;
+            left: 0;
+        }
+
+        .burger-bar::before {
+            transform: translateY(-12px);
+        }
+
+        .burger-bar::after {
+            transform: translateY(12px);
+        }
+    }
+}
