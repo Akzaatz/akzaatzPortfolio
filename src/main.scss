@@ -1,6 +1,7 @@
-@import "./components/navbarre/nav.scss";
+@import "./components/navbarre/Nav.module.scss";
 @import "./utils/settings.scss";
 @import "../src/components/header/header.scss";
 @import "../src/components/achievements/achievements.scss";
 @import "../src/components/skills/skills.scss";
-@import "../src/components/line/line.scss"
+@import "../src/components/line/line.scss";
+@import "../src/components/footer/footer.scss"

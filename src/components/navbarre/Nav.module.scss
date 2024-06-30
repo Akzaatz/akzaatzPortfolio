@@ -12,14 +12,37 @@
     padding: 1rem;
     z-index: 5;
 
+
+
+    &.showNav .navbar_links {
+        display: flex;
+    }
+
+    .navbar_logo {
+        font-size: 2.9rem;
+        font-weight: 900;
+    }
+
     .navbar_links {
         display: flex;
+
+        color: white;
+    }
+
+    .navbar_item {
+        color: white;
+        display: flex;
+        font-size: 1.2rem;
+        margin-left: 15px;
     }
 
     .navbar_link {
         padding: 0 0.3rem;
         color: inherit;
+        font-size: 1.5rem;
     }
+
+
 
     .navbar_burger {
         width: 40px;
@@ -29,37 +52,46 @@
         display: none;
     }
 
+    .burger_bar {
+        display: block;
+        width: 40px;
+        height: 2px;
+        background: $white;
+    }
+
     @media screen and (max-width: 768px) {
         .navbar_links {
+            display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             position: fixed;
             right: -100vw;
+            width: 200px;
             bottom: 0;
             height: 100vh;
             padding: 2rem;
-            visibility: hidden;
-            background: rgb(255, 0, 0);
+            background: $third;
+            opacity: 0.5;
             transition: right 0.3s ease;
-            /* Ajout de la transition */
+
         }
 
-        .show-nav .navbar_links {
-            width: 100vw;
+        &.showNav .navbar_links {
             right: 0;
             visibility: visible;
         }
 
-        .hide-nav .navbar_links {
-            right: -100vw;
-            visibility: hidden;
+        .navbar_logo {
+            font-size: 2rem;
+            font-weight: 900;
         }
 
         .navbar_link {
             display: block;
             padding: 1.5rem;
             font-size: 5vw;
+            color: $black;
         }
 
         .navbar_burger {
@@ -73,9 +105,9 @@
             cursor: pointer;
         }
 
-        .burger-bar,
-        .burger-bar::before,
-        .burger-bar::after {
+        .burger_bar,
+        .burger_bar::before,
+        .burger_bar::after {
             display: block;
             width: 40px;
             height: 2px;
@@ -84,18 +116,18 @@
             background: $white;
         }
 
-        .burger-bar::before,
-        .burger-bar::after {
+        .burger_bar::before,
+        .burger_bar::after {
             content: "";
             position: absolute;
             left: 0;
         }
 
-        .burger-bar::before {
+        .burger_bar::before {
             transform: translateY(-12px);
         }
 
-        .burger-bar::after {
+        .burger_bar::after {
             transform: translateY(12px);
         }
     }
