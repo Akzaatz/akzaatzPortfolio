@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    font-family: $font4;
     align-items: center;
     position: fixed;
     width: 100%;
@@ -11,8 +12,6 @@
     color: $white;
     padding: 1rem;
     z-index: 5;
-
-
 
     &.showNav .navbar_links {
         display: flex;

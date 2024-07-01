@@ -1,18 +1,30 @@
 .header {
     background: $second;
     padding-top: 50px;
-    min-height: 450px;
+    min-height: 550px;
 
     h1 {
-        margin: 30px;
+        margin-top: 130px;
+        font-size: 3rem;
+
+        @media screen and (max-width: 658px) {
+            margin-top: 90px;
+        }
     }
 
-    h2 {
-        font-size: 2rem;
-        margin-bottom: 15px;
+
+
+    .poly {
+        margin-top: 30px;
+
+        @media screen and (max-width: 658px) {
+            padding-bottom: 50px;
+        }
     }
 
-
+    li {
+        font-size: 1.5rem;
+    }
 
     svg:not(:root).svg-inline--fa {
         overflow: visible;

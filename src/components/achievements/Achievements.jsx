@@ -64,7 +64,7 @@ const Achievements = () => {
 
   return (
     <div className={styles.main}>
-      <h1>Réalisations</h1>
+      <h2>Réalisations</h2>
       <Line />
       <div className={styles.achievements} id="achievements">
         <ResponsiveGridLayout
