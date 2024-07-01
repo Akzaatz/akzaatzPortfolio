@@ -5,7 +5,7 @@ import sass from "sass";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/AkzaatzPortfolio/",
+  base: process.env.NODE_ENV === "production" ? "/akzaatzPortfolio/" : "/",
   css: {
     preprocessorOptions: {
       scss: {

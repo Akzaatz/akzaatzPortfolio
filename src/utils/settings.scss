@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "Roboto";
-    src: url("../../public/font/Roboto/Roboto-Regular.ttf") format("truetype");
+    src: url("font/Roboto/Roboto-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -12,12 +12,27 @@
 
 @font-face {
     font-family: "F25_Bank_Printer_Bold";
-    src: url("../../public/font/f25_bank_printer/F25_Bank_Printer_Bold.ttf") format("truetype");
+    src: url("font/f25_bank_printer/F25_Bank_Printer_Bold.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Fabada-regular";
-    src: url("../../public/font/fabada/Fabada-regular.ttf") format("truetype");
+    src: url("font/fabada/Fabada-regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "conthrax";
+    src: url("font/conthrax/contrax-sb.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "hemi head bd it";
+    src: url("font/hemi_head/hemi head bd it.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "hemi head bd it";
+    src: url("font/hieronimus/hieronimus.otf") format("opentype");
 }
 
 // Variables :
@@ -27,6 +42,9 @@ $font1: "Roboto", sans-serif;
 $font2: "F25_Bank_Printer", sans-serif;
 $font3: "F25_Bank_Printer_Bold", sans-serif;
 $font4: "Fabada-regular", sans-serif;
+$font5: "contrax-sb.otf", sans-serif;
+$font6: "hemi head bd it.otf", sans-serif;
+$font7: "hieronimus.otf", sans-serif;
 
 //  ========COULEURS==========
 $black: #101010;
@@ -67,7 +85,7 @@ body {
     align-items: center;
 
     text-align: center;
-    font-family: $font2;
+    font-family: $font6;
     font-size: 1rem;
     background: $third;
     // box-shadow: 0px 2px 10px rgba(59, 59, 59, 0.25);
