@@ -22,16 +22,16 @@
 
 @font-face {
     font-family: "conthrax";
-    src: url("font/conthrax/contrax-sb.otf") format("opentype");
+    src: url("font/conthrax/conthrax_sb.otf") format("opentype");
 }
 
 @font-face {
-    font-family: "hemi head bd it";
-    src: url("font/hemi_head/hemi head bd it.otf") format("opentype");
+    font-family: "hemi_head_bd_it";
+    src: url("font/hemi_head/hemi_head_bd_it.otf") format("opentype");
 }
 
 @font-face {
-    font-family: "hemi head bd it";
+    font-family: "hieronimus";
     src: url("font/hieronimus/hieronimus.otf") format("opentype");
 }
 
@@ -42,9 +42,9 @@ $font1: "Roboto", sans-serif;
 $font2: "F25_Bank_Printer", sans-serif;
 $font3: "F25_Bank_Printer_Bold", sans-serif;
 $font4: "Fabada-regular", sans-serif;
-$font5: "contrax-sb.otf", sans-serif;
-$font6: "hemi head bd it.otf", sans-serif;
-$font7: "hieronimus.otf", sans-serif;
+$font5: "conthrax", sans-serif;
+$font6: "hemi_head_bd_it", sans-serif;
+$font7: "hieronimus", sans-serif;
 
 //  ========COULEURS==========
 $black: #101010;
@@ -83,7 +83,7 @@ body {
     align-items: center;
 
     text-align: center;
-    font-family: $font6;
+    font-family: $font1;
     font-size: 1rem;
     background: $third;
     // box-shadow: 0px 2px 10px rgba(59, 59, 59, 0.25);

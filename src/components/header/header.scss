@@ -17,6 +17,7 @@
     .poly {
         margin-top: 30px;
 
+
         @media screen and (max-width: 658px) {
             padding-bottom: 50px;
         }
@@ -24,6 +25,7 @@
 
     li {
         font-size: 1.5rem;
+
     }
 
     svg:not(:root).svg-inline--fa {
