@@ -3,7 +3,7 @@ import Line from "../line/Line";
 
 const Header = () => {
   return (
-    <div className="header">
+    <div className="header" id="header">
       <h1>Développeur Web</h1>
       <Line />
       <h2>Polyvalent</h2>

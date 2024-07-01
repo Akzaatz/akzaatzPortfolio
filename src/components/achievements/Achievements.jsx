@@ -5,6 +5,8 @@ import "react-grid-layout/css/styles.css";
 import "react-resizable/css/styles.css";
 import styles from "./Achievements.module.scss";
 import Modal from "../modal/Modal";
+import portfolioItems from "../../assets/data.json";
+import PropTypes from "prop-types";
 
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
@@ -60,50 +62,11 @@ const Achievements = () => {
     setIsModalOpen(false);
   };
 
-  const portfolioItems = [
-    {
-      id: "0",
-      title: "Argent Bank",
-      image: "img/argentbank.webp",
-      link: "https://akzaatz.github.io/Argent-Bank/",
-    },
-    {
-      id: "1",
-      title: "Booki",
-      image: "img/booki.webp",
-      link: "https://akzaatz.github.io/portfolio/booki",
-    },
-    {
-      id: "2",
-      title: "Kasa",
-      image: "img/kaza.webp",
-      link: "https://akzaatz.github.io/Kasa/",
-    },
-    {
-      id: "3",
-      title: "OhMyFood",
-      image: "img/myfood.webp",
-      link: "https://akzaatz.github.io/ohmyfood/",
-    },
-    {
-      id: "4",
-      title: "Nina Ricci",
-      image: "img/nina.webp",
-      link: "https://akzaatz.github.io/nina-carducci/",
-    },
-    {
-      id: "5",
-      title: "Sophie Bluel",
-      image: "img/sophiebluel.webp",
-      link: "https://akzaatz.github.io/sophie-Bluel/FrontEnd/index.html",
-    },
-  ];
-
   return (
     <div className={styles.main}>
       <h1>Réalisations</h1>
       <Line />
-      <div className={styles.achievements}>
+      <div className={styles.achievements} id="achievements">
         <ResponsiveGridLayout
           className={styles.layout}
           layouts={layouts}

@@ -44,7 +44,7 @@ const layouts = {
 
 const Skills = () => {
   return (
-    <div className="main">
+    <div className="main" id="about">
       <h1>Compétences</h1>
       <Line />
       <div className="skills">

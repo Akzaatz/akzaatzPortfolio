@@ -1,6 +1,7 @@
 // Nav.jsx
 import React, { useState } from "react";
-import styles from "./Nav.module.scss"; // Import du fichier CSS Module
+import styles from "./Nav.module.scss";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [showLinks, setShowLinks] = useState(false);
@@ -11,15 +12,18 @@ const Nav = () => {
 
   return (
     <nav className={`${styles.navbar} ${showLinks ? styles.showNav : ""}`}>
-      <div className={styles.navbar_logo}>Akzaatz</div>
+      <div className={styles.navbar_logo}>
+        <a href="#header">Akzaatz</a>
+      </div>
+
       <ul className={styles.navbar_links}>
         <li className={styles.navbar_item}>
-          <a href="/" className={styles.navbar_link}>
+          <a href="#achievements" className={styles.navbar_link}>
             Réalisations
           </a>
         </li>
         <li className={styles.navbar_item}>
-          <a href="/" className={styles.navbar_link}>
+          <a href="#about" className={styles.navbar_link}>
             Compétences
           </a>
         </li>
@@ -29,7 +33,7 @@ const Nav = () => {
           </a>
         </li>
         <li className={styles.navbar_item}>
-          <a href="/" className={styles.navbar_link}>
+          <a href="#footer" className={styles.navbar_link}>
             Contact
           </a>
         </li>
