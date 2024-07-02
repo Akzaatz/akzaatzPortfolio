@@ -1,11 +1,14 @@
+@import "../../utils/variables.scss";
+
 .navbar {
+
     display: flex;
+    font-family: $font3;
     flex-wrap: wrap;
+    font-weight: 100;
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    font-family: $font1;
-
     width: 100%;
     top: -1px;
     min-height: 55px;
@@ -19,8 +22,11 @@
     }
 
     .navbar_logo {
+        font-family: $font4;
         font-size: 2.9rem;
         font-weight: 900;
+
+
     }
 
     .navbar_links {

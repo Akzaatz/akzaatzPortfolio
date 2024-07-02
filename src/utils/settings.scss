@@ -23,40 +23,47 @@
 //     font-family: "hemi head bd it";
 //     src: url("#{$VITE_BASE_URL}font/hemi_head/hemi head bd it.otf") format("opentype");
 // }
-// @font-face {
-//     font-family: "hieronimus";
-//     src: url("akzaatzPortfolio/font/hieronimus/hieronimus.otf") format("opentype");
-// }
+
 // @font-face {
 //     font-family: "Roboto";
 //     src: url("../../public/font/Roboto/Roboto-Regular.ttf") format("truetype");
 // }
+@import "src/utils/_variables.scss";
+
 
 // @font-face {
-//     font-family: "hemi head bd it";
-//     src: url("akzaatzPortfolio/font/hemi_head/hemi head bd it.otf") format("opentype");
+//     font-family: "";
+//     src: url("akzaatzPortfolio/;
 // }
-@import "src/utils/_variables.scss";
+
+@font-face {
+    font-family: "hieronimus";
+    src: url("#{$VITE_BASE_URL}font/hieronimus/hieronimus.otf") format("opentype");
+}
 
 @font-face {
     font-family: "Roboto";
-    src: url("#{$VITE_BASE_URL}font/Roboto/Roboto-Regular.ttf") format("truetype");
+    src: url("#{$VITE_BASE_URL}font/Roboto/Roboto-Regular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "F25_Bank_Printer";
+    src: url("#{$VITE_BASE_URL}font/f25_bank_printer/F25_Bank_Printer.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "hemi head bd it";
-    src: url("#{$VITE_BASE_URL}font/hemi_head/hemi head bd it.otf") format("opentype");
+    src: url("#{$VITE_BASE_URL}font/hieronimus/hieronimus.otf") format("opentype");
 }
 
 // Variables :
 
 // ========FONTS==========
-// $font1: "Roboto", sans-serif;
 $font1: "Roboto", sans-serif;
-// $font3: "F25_Bank_Printer_Bold", sans-serif;
-// $font4: "Fabada-regular", sans-serif;
-// $font5: "conthrax", sans-serif;
 $font2: "hemi_head_bd_it", sans-serif;
+$font3: "F25_Bank_Printer", sans-serif;
+$font4: "hieronimus", sans-serif;
+// $font5: "conthrax", sans-serif;
 // $font7: "hieronimus", sans-serif;
 
 
@@ -70,10 +77,6 @@ $font2: "hemi_head_bd_it", sans-serif;
     text-decoration: none;
     color: $white;
 
-    // *::selection {
-    //     background: $third;
-
-    // }
 }
 
 li {
