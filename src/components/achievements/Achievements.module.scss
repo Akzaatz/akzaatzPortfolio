@@ -3,7 +3,7 @@
 }
 
 .achievements {
-    margin-top: 20px;
+    margin: 20px 0 70px;
     background: $third;
 }
 
@@ -14,8 +14,9 @@
     border-radius: 4px;
 
     img {
-        width: 100%;
+        width: 90%;
         height: auto;
+
     }
 
     .portfolio_item_caption {

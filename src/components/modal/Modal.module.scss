@@ -46,18 +46,31 @@
     max-width: 500px;
     width: 100%;
     text-align: center;
+    position: relative;
 
     a {
         color: $six;
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background: $second;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+    }
+
+    a:hover {
+        background: $third;
     }
 
     .modal_button {
         margin-top: 10px;
         border: none;
-        padding: 2px 5px;
+        padding: 10px 20px;
         background: $second;
-
         color: $fifth;
+        cursor: pointer;
+        border-radius: 5px;
     }
 }
 

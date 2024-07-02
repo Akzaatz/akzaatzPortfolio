@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Responsive, WidthProvider } from "react-grid-layout";
 import Line from "../line/Line";
 import "react-grid-layout/css/styles.css";
@@ -6,7 +6,6 @@ import "react-resizable/css/styles.css";
 import styles from "./Achievements.module.scss";
 import Modal from "../modal/Modal";
 import portfolioItems from "../../assets/data.json";
-import PropTypes from "prop-types";
 
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
@@ -62,6 +61,15 @@ const Achievements = () => {
     setIsModalOpen(false);
   };
 
+  const handleClick = (item) => {
+    console.log("Item clicked:", item); // Ajoutez un journal de débogage
+    handleOpenModal(item);
+  };
+
+  useEffect(() => {
+    console.log("Portfolio items loaded:", portfolioItems); // Vérifiez que les items sont bien chargés
+  }, []);
+
   return (
     <div className={styles.main}>
       <h2>Réalisations</h2>
@@ -80,7 +88,8 @@ const Achievements = () => {
             <div
               key={item.id}
               className={styles.portfolio_item}
-              onClick={() => handleOpenModal(item)}
+              onClick={() => handleClick(item)}
+              onTouchStart={() => handleClick(item)} // Capture les événements tactiles
             >
               <div className={styles.portfolio_item_caption}></div>
               <img
