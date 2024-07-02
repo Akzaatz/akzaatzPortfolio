@@ -1,40 +1,4 @@
-// imports fonts
-
-// @font-face {
-//     font-family: "Roboto";
-//     src: url("akzaatzPortfolio/font/Roboto/Roboto-Regular.ttf") format("truetype");
-// }
-
-// @font-face {
-//     font-family: "F25_Bank_Printer";
-//     src: url("#{$VITE_BASE_URL}font/f25_bank_printer/F25_Bank_Printer.ttf") format("truetype");
-// }
-
-// @font-face {
-//     font-family: "F25_Bank_Printer_Bold";
-//     src: url("akzaatzPortfolio/font/f25_bank_printer/F25_Bank_Printer_Bold.ttf") format("truetype");
-// }
-
-// @font-face {
-//     font-family: "Fabada-regular";
-//     src: url("akzaatzPortfolio/font/fabada/Fabada-regular.ttf") format("truetype");
-// }
-// @font-face {
-//     font-family: "hemi head bd it";
-//     src: url("#{$VITE_BASE_URL}font/hemi_head/hemi head bd it.otf") format("opentype");
-// }
-
-// @font-face {
-//     font-family: "Roboto";
-//     src: url("../../public/font/Roboto/Roboto-Regular.ttf") format("truetype");
-// }
 @import "src/utils/_variables.scss";
-
-
-// @font-face {
-//     font-family: "";
-//     src: url("akzaatzPortfolio/;
-// }
 
 @font-face {
     font-family: "hieronimus";
@@ -66,8 +30,6 @@ $font4: "hieronimus", sans-serif;
 // $font5: "conthrax", sans-serif;
 // $font7: "hieronimus", sans-serif;
 
-
-
 *,
 *::before,
 *::after {
@@ -76,7 +38,6 @@ $font4: "hieronimus", sans-serif;
     box-sizing: border-box;
     text-decoration: none;
     color: $white;
-
 }
 
 li {

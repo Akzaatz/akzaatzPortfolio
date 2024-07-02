@@ -1,0 +1,31 @@
+/* Bubble.css */
+
+
+/* BubbleZone.css */
+.bubble_zone {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    /* Adjust as needed */
+
+
+    .bubble {
+        position: absolute;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: red
+    }
+
+    .static_zone {
+        position: relative;
+    }
+
+    .icon_contact {
+        font-size: 3rem;
+    }
+
+
+
+}

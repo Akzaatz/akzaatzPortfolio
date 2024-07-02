@@ -28,7 +28,7 @@ const Nav = () => {
           </a>
         </li>
         <li className={styles.navbar_item}>
-          <a href="/" className={styles.navbar_link}>
+          <a href="#languages" className={styles.navbar_link}>
             Langages
           </a>
         </li>
