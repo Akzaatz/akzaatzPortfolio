@@ -6,8 +6,8 @@ import Skills from "../src/components/skills/Skills";
 import Modal from "./components/modal/Modal";
 import Footer from "./components/footer/Footer";
 import Languages from "../src/components/languages/Languages";
-// import BubbleZone from "./components/bubblezone/BubbleZone";
-// import Bubble from "./components/bubble/Bubble";
+import BubbleZone from "./components/bubblezone/BubbleZone";
+import Bubble from "./components/bubble/Bubble";
 const App = () => {
   return (
     <div>

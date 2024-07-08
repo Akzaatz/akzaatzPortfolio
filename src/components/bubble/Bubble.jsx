@@ -31,7 +31,7 @@ const Bubble = () => {
   }, []);
 
   useEffect(() => {
-    const bubble = document.querySelector(".bubble");
+    const bubble = document.querySelector(`.${styles.bubble}`);
     if (!bubble) return;
 
     let velocityX = (Math.random() - 0.5) * 2;

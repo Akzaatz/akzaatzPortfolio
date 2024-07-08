@@ -5,7 +5,6 @@
     padding: 80px;
     width: 100%;
 
-
     @media screen and (max-width: 1024px) {
         flex-direction: column;
         width: auto;
@@ -14,7 +13,6 @@
 
     .bubble {
         position: relative;
-
         width: 70px;
         height: 70px;
         background: $second;
@@ -30,26 +28,20 @@
         }
     }
 
-
     #css {
         font-size: 2.5rem;
-
         width: 60px;
         height: 60px;
     }
 
     #sass {
         font-size: 2.5rem;
-        // top: 40px;
-        // left: 180px;
         width: 60px;
         height: 60px;
     }
 
     #js {
         font-size: 2.5rem;
-        // top: 90px;
-        // left: 210px;
         width: 60px;
         height: 60px;
     }
