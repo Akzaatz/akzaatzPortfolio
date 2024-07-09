@@ -1,19 +1,8 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import styles from "./BubbleZone.module.scss";
 
-const BubbleZone = () => {
+const BubbleZone = ({ randomSlogan }) => {
   const bubbleZoneRef = useRef(null);
-
-  useEffect(() => {
-    console.log("bubbleZoneRef:", bubbleZoneRef.current);
-  }, []);
-
-  const handleClick = () => {
-    console.log("BubbleZone handleClick triggered!");
-    for (let i = 0; i < 10; i++) {
-      createBubble();
-    }
-  };
 
   const createBubble = () => {
     const bubbleZone = bubbleZoneRef.current;
@@ -50,7 +39,6 @@ const BubbleZone = () => {
     bubble.style.top = bubbleTop + "px";
 
     bubbleZone.appendChild(bubble);
-    console.log("Bubble created and added to DOM:", bubble);
 
     const velocityX = (Math.random() - 0.5) * 2;
     const velocityY = (Math.random() - 0.5) * 2;
@@ -78,69 +66,15 @@ const BubbleZone = () => {
       }
     };
 
-    moveBubble();
-
-    bubble.addEventListener("click", () => {
-      const staticZone = document.querySelector(`.${styles.static_zone}`);
-      if (staticZone) {
-        const banner = document.createElement("span");
-        banner.classList.add(styles.banner);
-
-        const slogans = [
-          "SERIAL CODEUR",
-          "GREEN CODEUR",
-          "FRIENDLY CODEUR",
-          "SERIOUS CODEUR",
-        ];
-        const randomSlogan =
-          slogans[Math.floor(Math.random() * slogans.length)];
-        banner.textContent = randomSlogan;
-
-        switch (randomSlogan) {
-          case "SERIAL CODEUR":
-            banner.style.backgroundColor = "red";
-            break;
-          case "GREEN CODEUR":
-            banner.style.backgroundColor = "green";
-            break;
-          case "FRIENDLY CODEUR":
-            banner.style.backgroundColor = "blue";
-            break;
-          case "SERIOUS CODEUR":
-            banner.style.backgroundColor = "beige";
-            break;
-        }
-
-        staticZone.appendChild(banner);
-        staticZone.style.opacity = 1;
-
-        setTimeout(() => {
-          banner.remove();
-          staticZone.style.opacity = 1;
-        }, 2000);
-      }
+    bubble.addEventListener("click", (e) => {
+      e.stopPropagation();
+      randomSlogan();
     });
+
+    moveBubble();
   };
 
-  return (
-    <div
-      className={styles.bubble_zone}
-      ref={bubbleZoneRef}
-      onClick={handleClick}
-    >
-      {/* Placeholder for bubbles */}
-    </div>
-  );
-};
-
-BubbleZone.handleClick = () => {
-  console.log("BubbleZone handleClick called from export");
-  const event = new MouseEvent("click", { bubbles: true });
-  const staticIcons = document.querySelectorAll(`.${styles.bubble}`);
-  staticIcons.forEach((icon) => {
-    console.log("Dispatching click event on icon:", icon);
-    icon.dispatchEvent(event);
-  });
+  return <div className={styles.bubble_zone} ref={bubbleZoneRef}></div>;
 };
 
 export default BubbleZone;
