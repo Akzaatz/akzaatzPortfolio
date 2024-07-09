@@ -62,12 +62,12 @@ const Achievements = () => {
   };
 
   const handleClick = (item) => {
-    console.log("Item clicked:", item); // Ajoutez un journal de débogage
+    console.log("Item clicked:", item);
     handleOpenModal(item);
   };
 
   useEffect(() => {
-    console.log("Portfolio items loaded:", portfolioItems); // Vérifiez que les items sont bien chargés
+    console.log("Portfolio items loaded:", portfolioItems);
   }, []);
 
   return (
@@ -83,13 +83,14 @@ const Achievements = () => {
           rowHeight={300}
           width={1200}
           isResizable={false}
+          isDraggable={false}
         >
           {portfolioItems.map((item) => (
             <div
               key={item.id}
               className={styles.portfolio_item}
               onClick={() => handleClick(item)}
-              onTouchStart={() => handleClick(item)} // Capture les événements tactiles
+              onTouchEnd={() => handleClick(item)}
             >
               <div className={styles.portfolio_item_caption}></div>
               <img

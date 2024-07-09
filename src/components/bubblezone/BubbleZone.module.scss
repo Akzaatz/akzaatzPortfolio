@@ -1,16 +1,16 @@
 .bubble_zone {
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 200px;
 
     .bubble {
         position: absolute;
-        cursor: pointer;
+        cursor: crosshair;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: $fourth
     }
 
     .static_zone {
@@ -20,4 +20,6 @@
     .icon_contact {
         font-size: 3rem;
     }
+
+
 }

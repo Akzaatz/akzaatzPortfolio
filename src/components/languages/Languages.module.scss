@@ -38,4 +38,60 @@
             height: 60px;
         }
     }
+
+    .banner {
+
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 20px;
+        opacity: 0.5;
+        left: 50%;
+        /* Centrer horizontalement */
+        transform: translateX(-50%);
+        /* Centrer horizontalement */
+        width: 50%;
+        height: 430px;
+        text-align: center;
+        font-size: 6rem;
+        font-weight: bolder;
+        clip-path: polygon(50% 0%,
+                80% 10%,
+                100% 35%,
+                100% 70%,
+                80% 90%,
+                50% 100%,
+                20% 90%,
+                0% 70%,
+                0% 35%,
+                20% 10%);
+        transition: opacity 0.5s ease-in-out;
+        animation: zoom ease-in-out 2.3s;
+    }
+
+    @keyframes zoom {
+        0% {
+            transform: scale(0);
+            opacity: 0.5;
+        }
+
+        50% {
+            transform: scale(0.5);
+            opacity: 0.75;
+        }
+
+        100% {
+            transform: scale(0);
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .banner {
+            font-size: 2rem;
+            height: 210px;
+            bottom: 300px;
+        }
+    }
 }

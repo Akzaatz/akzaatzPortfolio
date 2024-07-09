@@ -56,6 +56,7 @@ const Skills = () => {
           rowHeight={70}
           width={150}
           isResizable={false}
+          isDraggable={false}
         >
           <div key="0" className="skills-item">
             <button className="bottone1">
