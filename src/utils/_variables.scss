@@ -12,6 +12,7 @@ $third: #007594;
 $fourth: #009cc4;
 $fifth: #00c5f6;
 $six: #b2e5ff;
+
 //  ========ANIMS==========
 
 @keyframes slideInDown {
@@ -24,9 +25,10 @@ $six: #b2e5ff;
         transform: translateY(-100%);
         opacity: 1;
     }
+}
 
-    $slideInDown: slideInDown 0.5s ease-in-out;
-    $slideInDownDelay-1: slideInDown 0.5s ease-in-out 0s;
-    $slideInDownDelay-2: slideInDown 0.5s ease-in-out 0.1s;
-    $slideInDownDelay-3: slideInDown 0.5s ease-in-out 0.2s;
-    $slideInDownDelay-4: slideInDown 0.5s ease-in-out 0.3s;
+$slideInDown: slideInDown 0.5s ease-in-out;
+$slideInDownDelay-1: slideInDown 0.5s ease-in-out 0s;
+$slideInDownDelay-2: slideInDown 0.5s ease-in-out 0.1s;
+$slideInDownDelay-3: slideInDown 0.5s ease-in-out 0.2s;
+$slideInDownDelay-4: slideInDown 0.5s ease-in-out 0.3s;

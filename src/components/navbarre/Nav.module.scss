@@ -1,5 +1,6 @@
 @import "../../utils/variables.scss";
 
+
 .navbar {
     display: flex;
     font-family: $font3;
@@ -148,24 +149,23 @@
         &.showNav .burger_bar::after {
             transform: rotate(-45deg);
         }
+    }
+}
 
-        .navbar_item {
-            &.slideInDown-1 {
-                animation: $slideInDownDelay-1;
-            }
+.navbar_item {
+    &.slideInDown-1 {
+        animation: $slideInDownDelay-1;
+    }
 
-            &.slideInDown-2 {
-                animation: $slideInDownDelay-2;
-            }
+    &.slideInDown-2 {
+        animation: $slideInDownDelay-2;
+    }
 
-            &.slideInDown-3 {
-                animation: $slideInDownDelay-3;
-            }
+    &.slideInDown-3 {
+        animation: $slideInDownDelay-3;
+    }
 
-            &.slideInDown-4 {
-                animation: $slideInDownDelay-4;
-            }
-        }
-
+    &.slideInDown-4 {
+        animation: $slideInDownDelay-4;
     }
 }
