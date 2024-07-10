@@ -1,7 +1,6 @@
 @import "../../utils/variables.scss";
 
 .navbar {
-
     display: flex;
     font-family: $font3;
     flex-wrap: wrap;
@@ -25,13 +24,10 @@
         font-family: $font4;
         font-size: 2.9rem;
         font-weight: 900;
-
-
     }
 
     .navbar_links {
         display: flex;
-
         color: white;
     }
 
@@ -42,15 +38,16 @@
         margin-left: 15px;
     }
 
+
+
     .navbar_link {
         padding: 0 0.3rem;
         color: inherit;
         font-size: 1.5rem;
     }
 
-
-
     .navbar_burger {
+        margin-top: 20px;
         width: 40px;
         height: 40px;
         border: none;
@@ -67,6 +64,7 @@
 
     @media screen and (max-width: 768px) {
         .navbar_links {
+
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -78,9 +76,8 @@
             height: 100vh;
             padding: 2rem;
             background: $third;
-            opacity: 0.5;
+            opacity: 0.8;
             transition: right 0.3s ease;
-
         }
 
         &.showNav .navbar_links {
@@ -97,7 +94,8 @@
             display: block;
             padding: 1.5rem;
             font-size: 5vw;
-            color: $black;
+            color: $prim;
+
         }
 
         .navbar_burger {
@@ -120,6 +118,7 @@
             position: relative;
             border-radius: 3px;
             background: $white;
+            transition: all 0.5s ease-in-out;
         }
 
         .burger_bar::before,
@@ -136,5 +135,37 @@
         .burger_bar::after {
             transform: translateY(12px);
         }
+
+        &.showNav .burger_bar {
+            background: transparent;
+            width: 0;
+        }
+
+        &.showNav .burger_bar::before {
+            transform: rotate(45deg);
+        }
+
+        &.showNav .burger_bar::after {
+            transform: rotate(-45deg);
+        }
+
+        .navbar_item {
+            &.slideInDown-1 {
+                animation: $slideInDownDelay-1;
+            }
+
+            &.slideInDown-2 {
+                animation: $slideInDownDelay-2;
+            }
+
+            &.slideInDown-3 {
+                animation: $slideInDownDelay-3;
+            }
+
+            &.slideInDown-4 {
+                animation: $slideInDownDelay-4;
+            }
+        }
+
     }
 }

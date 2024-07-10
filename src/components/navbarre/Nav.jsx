@@ -17,30 +17,46 @@ const Nav = () => {
       </div>
 
       <ul className={styles.navbar_links}>
-        <li className={styles.navbar_item}>
+        <li
+          className={`${styles.navbar_item} ${
+            showLinks ? styles["slideInDown-4"] : ""
+          }`}
+        >
           <a href="#achievements" className={styles.navbar_link}>
             Réalisations
           </a>
         </li>
-        <li className={styles.navbar_item}>
+        <li
+          className={`${styles.navbar_item} ${
+            showLinks ? styles["slideInDown-3"] : ""
+          }`}
+        >
           <a href="#about" className={styles.navbar_link}>
             Compétences
           </a>
         </li>
-        <li className={styles.navbar_item}>
+        <li
+          className={`${styles.navbar_item} ${
+            showLinks ? styles["slideInDown-2"] : ""
+          }`}
+        >
           <a href="#languages" className={styles.navbar_link}>
             Langages
           </a>
         </li>
-        <li className={styles.navbar_item}>
+        <li
+          className={`${styles.navbar_item} ${
+            showLinks ? styles["slideInDown-1"] : ""
+          }`}
+        >
           <a href="#footer" className={styles.navbar_link}>
             Contact
           </a>
         </li>
       </ul>
-      <button className={styles.navbar_burger} onClick={handleShowLinks}>
+      <div className={styles.navbar_burger} onClick={handleShowLinks}>
         <span className={styles.burger_bar}></span>
-      </button>
+      </div>
     </nav>
   );
 };

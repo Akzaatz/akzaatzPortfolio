@@ -8,7 +8,7 @@ const Header = () => {
       <Line />
       <h2>Polyvalent</h2>
 
-      <ul className="poly">
+      <ul className="prez">
         <li>Maîtrise les principaux langages de Développement Web</li>
         <li>Maîtrise les outils informatiques et la communication digitale</li>
         <li>

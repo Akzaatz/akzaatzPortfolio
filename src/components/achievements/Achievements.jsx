@@ -67,7 +67,7 @@ const Achievements = () => {
   };
 
   useEffect(() => {
-    console.log("Portfolio items loaded:", portfolioItems);
+    // console.log("Portfolio items loaded:", portfolioItems);
   }, []);
 
   return (
