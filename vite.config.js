@@ -5,8 +5,8 @@ import path from "path";
 const basePath = process.env.VITE_BASE_URL || "/";
 
 export default defineConfig({
-  base: "/akzaatzPortfolio/",
-
+  // base: "/akzaatzPortfolio/",
+  base: "/",
   plugins: [react()],
   css: {
     preprocessorOptions: {
