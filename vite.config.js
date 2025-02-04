@@ -5,23 +5,9 @@ import path from "path";
 const basePath = process.env.VITE_BASE_URL || "/";
 
 export default defineConfig({
-  base: "/", // Correct pour un déploiement sur domaine racine
+  base: "/akzaatzPortfolio/",
+  // base: "/",
   plugins: [react()],
-  build: {
-    outDir: "dist",
-    assetsDir: "assets",
-    // Optimisations pour la production
-    minify: "terser",
-    sourcemap: false,
-    // Configuration pour améliorer le chargement
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ["react", "react-dom"],
-        },
-      },
-    },
-  },
   css: {
     preprocessorOptions: {
       scss: {
@@ -46,9 +32,22 @@ export default defineConfig({
 // const basePath = process.env.VITE_BASE_URL || "/";
 
 // export default defineConfig({
-//   // base: "/akzaatzPortfolio/",
-//   base: "/",
+//   base: "/", // Correct pour un déploiement sur domaine racine
 //   plugins: [react()],
+//   build: {
+//     outDir: "dist",
+//     assetsDir: "assets",
+//     // Optimisations pour la production
+//     minify: "terser",
+//     sourcemap: false,
+//     // Configuration pour améliorer le chargement
+//     rollupOptions: {clear
+//         manualChunks: {
+//           vendor: ["react", "react-dom"],
+//         },
+//       },
+//     },
+//   },
 //   css: {
 //     preprocessorOptions: {
 //       scss: {
