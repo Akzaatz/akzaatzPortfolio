@@ -1,7 +1,9 @@
+@use "../../utils/variables" as v;
+
 .main {
     padding: 20px;
     text-align: center;
-    background: $second;
+    background: v.$second;
 }
 
 .skills {

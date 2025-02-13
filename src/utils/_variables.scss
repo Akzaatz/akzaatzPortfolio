@@ -1,9 +1,10 @@
-//  ========FONTS==========
+// src/utils/_variables.scss
+// Définition des variables
 $font1: "Roboto", sans-serif;
 $font2: "hemi_head_bd_it", sans-serif;
 $font3: "F25_Bank_Printer", sans-serif;
 $font4: "hieronimus", sans-serif;
-//  ========COULEURS==========
+
 $black: #101010;
 $white: #f1f1f1;
 $prim: #002e3c;
@@ -13,8 +14,7 @@ $fourth: #009cc4;
 $fifth: #00c5f6;
 $six: #b2e5ff;
 
-//  ========ANIMS==========
-
+// Définition des animations
 @keyframes slideInDown {
     from {
         transform: translateY(0);
@@ -32,3 +32,15 @@ $slideInDownDelay-1: slideInDown 0.5s ease-in-out 0s;
 $slideInDownDelay-2: slideInDown 0.5s ease-in-out 0.1s;
 $slideInDownDelay-3: slideInDown 0.5s ease-in-out 0.2s;
 $slideInDownDelay-4: slideInDown 0.5s ease-in-out 0.3s;
+
+// Export des variables CSS
+:root {
+    --black: #{$black};
+    --white: #{$white};
+    --prim: #{$prim};
+    --second: #{$second};
+    --third: #{$third};
+    --fourth: #{$fourth};
+    --fifth: #{$fifth};
+    --six: #{$six};
+}

@@ -1,10 +1,13 @@
+@use "sass:math";
+@use "../../utils/variables.scss" as vars;
+
 .main {
     text-align: center;
 }
 
 .achievements {
     margin: 20px 20px 70px 0;
-    background: $third;
+    background: vars.$third; // Utilisation de l'alias vars
 }
 
 .portfolio_item {
@@ -16,7 +19,6 @@
     img {
         width: 100%;
         height: auto;
-
     }
 
     .portfolio_item_caption {

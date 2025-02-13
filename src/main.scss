@@ -1,11 +1,11 @@
-@import "./components/navbarre/Nav.module.scss";
-@import "./utils/settings.scss";
-@import "./utils/variables";
-@import "../src/components/header/header.scss";
-@import "../src/components/achievements/Achievements.module.scss";
-@import "../src/components/skills/skills.scss";
-@import "../src/components/line/Line.module.scss";
-@import "../src/components/footer/footer.scss";
-@import "../src/components/modal/Modal.module.scss";
-@import "../src/components/languages/Languages.module.scss";
-@import "./components/bubble/Bubble.module.scss"
+@use "./utils/variables" as vars;
+@use "./utils/settings" as settings;
+@use "./components/navbarre/Nav.module" as nav;
+@use "./components/header/header" as header;
+@use "./components/achievements/Achievements.module.scss" as achievements;
+@use "./components/skills/skills" as skills;
+@use "./components/line/Line.module" as line;
+@use "./components/footer/footer" as footer;
+@use "./components/modal/Modal.module" as modal;
+@use "./components/languages/languages.module" as languages;
+@use "./components/bubble/Bubble.module" as bubble;
