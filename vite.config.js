@@ -6,18 +6,20 @@ export default defineConfig({
   base: "/",
   plugins: [react()],
   server: {
-    host: true,
+    host: "0.0.0.0",
     port: 3000,
     strictPort: true,
   },
   preview: {
-    host: true,
+    host: "0.0.0.0",
     port: 3000,
     strictPort: true,
     allowedHosts: [
-      "e8c4w0os00o04kswc8g4c40k.77.37.124.103.sslip.io",
+      "localhost",
+      "127.0.0.1",
       "akzaatz.com",
-      ".sslip.io", // Permet tous les sous-domaines sslip.io
+      ".akzaatz.com",
+      ".sslip.io",
     ],
   },
   css: {
