@@ -6,12 +6,14 @@ export default defineConfig({
   base: "/",
   plugins: [react()],
   server: {
-    host: "0.0.0.0",
+    host: true,
     port: 3000,
+    strictPort: true,
   },
   preview: {
-    host: "0.0.0.0",
+    host: true,
     port: 3000,
+    strictPort: true,
     allowedHosts: [
       "e8c4w0os00o04kswc8g4c40k.77.37.124.103.sslip.io",
       "akzaatz.com",
